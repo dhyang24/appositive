@@ -1,7 +1,7 @@
 var gameData = {
   money: 0,
   moneyps: 1,
-  upcost:10000
+  upcost:1000
 }
 function init(){
   document.getElementById("money").innerHTML = gameData.money
