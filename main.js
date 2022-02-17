@@ -8,14 +8,14 @@ function init(){
   document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
 }
 function getmoney(){
-  gameData.money+=gameData.moneyps
+  gameData.money+=parseFloat((gameData.moneyps).toFixed(0))
   document.getElementById("money").innerHTML ="Constant: "+gameData.money
 }
 function upgrade() {
   if (gameData.money >= gameData.upcost) {
-    gameData.money -= gameData.upcost
-    gameData.moneyps = parseFloat((gameData.moneyps+2).toFixed(4))
-    gameData.upcost = parseFloat((gameData.upcost*2.2).toFixed(4))
+    gameData.money -= parseFloat((gameData.upcost).toFixed(0))
+    gameData.moneyps = parseFloat((gameData.moneyps+2).toFixed(0))
+    gameData.upcost = parseFloat((gameData.upcost*2.2).toFixed(0))
     document.getElementById("money").innerHTML = "Constant: "+gameData.money
     document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
   }
