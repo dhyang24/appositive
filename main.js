@@ -3,6 +3,10 @@ var gameData = {
   moneyps: 1,
   upcost:10000
 }
+function init(){
+  document.getElementById("money").innerHTML = gameData.money
+  document.getElementById("upgradecost").innerHTML = "upgrade Cost: " + gameData.upcost
+}
 function getmoney(){
   gameData.money+=gameData.moneyps
   document.getElementById("money").innerHTML = gameData.money
