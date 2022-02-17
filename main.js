@@ -4,7 +4,7 @@ var gameData = {
   upcost: 100
 }
 function init(){
-  document.getElementById("money").innerHTML = gameData.money
+  document.getElementById("money").innerHTML = "Constant: "+gameData.money
   document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
 }
 function getmoney(){
@@ -14,8 +14,8 @@ function getmoney(){
 function upgrade() {
   if (gameData.money >= gameData.upcost) {
     gameData.money -= gameData.upcost
-    gameData.moneyps *= 2
-    gameData.upcost *= 2.2
+    gameData.moneyps = parseFloat((moneyps+2).toFixed(4))
+    gameData.upcost = upcost((upcost+2).toFixed(4))
     document.getElementById("money").innerHTML = gameData.money
     document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
   }
