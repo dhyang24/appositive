@@ -5,10 +5,10 @@
         <title>potato</title> 
         <script src="main.js" charset="utf-8" type="text/javascript"></script>
     </head>
-    <body onload="init()">
+    <body>
         <p id="money">0</p>
         <button onclick="getmoney()">button</button>
-        <button onclick="upgrade()",id = 'upgradecost'></button>
+        <button onclick="upgrade()",id = 'upgradecost' onload="init()"></button>
     </body>
     
 </html>
