@@ -3,6 +3,6 @@ var gameData = {
     moneyc: 1
 }
 function getmoney(){
-    gameData.money+=moneyc
+    gameData.money+=gameData.moneyc
     document.getElementById("money").innerHTML = gameData.money
 }
