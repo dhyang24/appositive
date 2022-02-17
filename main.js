@@ -4,7 +4,7 @@ var gameData = {
   upcost: 100
 }
 function init(){
-  document.getElementById("money").innerHTML = "Constant: "+gameData.money
+  document.getElementById("money").innerHTML = "Constant: "+ gameData.money
   document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
 }
 function getmoney(){
