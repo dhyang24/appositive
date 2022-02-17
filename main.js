@@ -5,7 +5,7 @@ var gameData = {
 }
 function init(){
   document.getElementById("money").innerHTML = gameData.money
-  document.getElementById("upgradecost").innerHTML = "upgrade Cost: " + gameData.upcost
+  document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
 }
 function getmoney(){
   gameData.money+=gameData.moneyps
@@ -16,8 +16,8 @@ function upgrade() {
     gameData.money -= gameData.upcost
     gameData.moneyps *= 2
     gameData.upcost *= 2.2
-    document.getElementById("money").innerHTML = gameData.gold + " Gold Mined"
-    document.getElementById("upgradecost").innerHTML = "upgrade Cost: " + gameData.upcost
+    document.getElementById("money").innerHTML = gameData.money
+    document.getElementById("cost").innerHTML = "upgrade Cost: " + gameData.upcost
   }
 }
 var mainloop = window.setInterval(function() {
